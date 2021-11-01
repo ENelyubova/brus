@@ -1,0 +1,235 @@
+$color-basic: #464646;
+$color-form: #242424;
+$color-white: #fff;
+$color-black: #232323;
+
+
+$color-darkgray: #292D31;
+$color-lightgray: #F6F6F6;
+$color-bordergray: #EFEFEF;
+$color-red: #D9030D;
+
+$color-h2: #2B2D2F;
+/* ---------- */ 
+$color-lightgray: #545454;
+$color-darkgray: #656565;
+
+$color-slidegray: #9C9497;
+$color-circlegray: #C7C7C7;
+
+$color-h2: #373737;
+$color-before: #434343;
+
+$color-darkorange: #F57B60;
+$color-lightorange: #FFE3C5;
+$color-orange: #F3BD83;
+
+$color-yellow: #F9EC89;
+
+$color-darkbrown: #342525;
+$color-verticalrown: #593B3B;
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: $icomoon !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, p, h1, h2, h3, h4, div, ul, li, div{
+  margin: 0px; padding: 0px; border: 0px;
+}
+
+body{
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+ul{
+  list-style: none;
+  margin:0px !important;
+  padding:0px !important;
+}
+
+.row{
+  /*margin: 0px !important;*/
+}
+
+.list-view{
+  padding: 0px !important;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+}
+
+a{
+  outline: none !important;
+  text-decoration: none;
+  @include delay;
+  &:hover{
+    @include delay;
+    text-decoration: none !important;
+  }
+  &:focus, &:active{
+    @include delay;
+    text-decoration: none !important;
+  }
+}
+
+img{
+  max-width: 100%;
+  width: auto;
+}
+
+.container-site{
+  position: relative; width: 100%;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+
+.content-site{
+  width: 1315px; 
+  // margin-left: auto;
+  margin: 0 auto;
+  height: 100%;
+  @include fontF($roboto, 16px, 400, $color-black);
+}
+
+.page-txt{
+  img{
+    max-width: 100%;
+  }
+  ul, ol{
+    list-style: disc !important;
+    li{
+      padding: 5px;
+      margin: 0px 15px;
+    }
+  }
+}
+
+.breadcrumbs{
+  padding: 10px 0px !important;
+  margin: 20px auto;
+  background: #fff;
+  .breadcrumb{
+    background: none;
+  }
+  a{
+    &:hover{
+      color: #f41a1a;
+    }
+  }
+}
+
+.icon-plus-1:before {
+  content: "\e919";
+}
+.icon-slash:before {
+  content: "\e918";
+}
+.icon-DCMedia--- .path1:before {
+  content: "\e900";
+  color: rgb(38, 38, 38);
+}
+.icon-DCMedia--- .path2:before {
+  content: "\e901";
+  margin-left: -4.2314453125em;
+  color: rgb(38, 38, 38);
+}
+.icon-DCMedia--- .path3:before {
+  content: "\e902";
+  margin-left: -4.2314453125em;
+  color: rgb(38, 38, 38);
+}
+.icon-DCMedia--- .path4:before {
+  content: "\e903";
+  margin-left: -4.2314453125em;
+  color: rgb(38, 38, 38);
+}
+.icon-DCMedia--- .path5:before {
+  content: "\e904";
+  margin-left: -4.2314453125em;
+  color: rgb(38, 38, 38);
+}
+.icon-DCMedia--- .path6:before {
+  content: "\e905";
+  margin-left: -4.2314453125em;
+  color: rgb(234, 198, 60);
+}
+.icon-DCMedia--- .path7:before {
+  content: "\e906";
+  margin-left: -4.2314453125em;
+  color: rgb(45, 45, 45);
+}
+.icon-DCMedia--- .path8:before {
+  content: "\e907";
+  margin-left: -4.2314453125em;
+  color: rgb(234, 198, 60);
+}
+.icon-arrow-l:before {
+  content: "\e908";
+}
+.icon-arrow-r:before {
+  content: "\e909";
+}
+.icon-boards:before {
+  content: "\e90a";
+}
+.icon-certified:before {
+  content: "\e90b";
+}
+.icon-cold:before {
+  content: "\e90c";
+}
+.icon-debit-card:before {
+  content: "\e90d";
+}
+.icon-experience:before {
+  content: "\e90e";
+}
+.icon-hand:before {
+  content: "\e90f";
+}
+.icon-light-bulb:before {
+  content: "\e910";
+}
+.icon-mouse:before {
+  content: "\e911";
+}
+.icon-play:before {
+  content: "\e912";
+}
+.icon-right:before {
+  content: "\e913";
+}
+.icon-truck:before {
+  content: "\e914";
+}
+.icon-wood:before {
+  content: "\e915";
+}
+.icon-wood2:before {
+  content: "\e916";
+}
+.icon-wood-board:before {
+  content: "\e917";
+}
+
+

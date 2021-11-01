@@ -1,0 +1,211 @@
+.footer-block{
+    position: relative;
+    padding: 25px 0;
+    .footer-panel{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        .logo{
+            width: 31%;
+            .logo-icon{
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                margin-bottom: 10px;
+                .policy{
+                    margin-left: 20px;
+                    @include fontF($roboto, 16px, 400, #777B7E);
+                }
+            }
+            .dc56{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-align: center;
+                        -ms-flex-align: center;
+                    -webkit-align-items: center;
+                        align-items: center;
+                a{
+                    margin-right: 10px;
+                    @include fontF($roboto, 16px, 400, #777B7E);
+                    span{
+                        @include fontF($icomoon, 30px, normal, $color-white);
+                    }
+                }
+            }
+        }
+        .info{
+            width: 25%;  
+            @include fontF($roboto, 16px, 400, #777B7E);
+        }
+        .menu{
+            width: 27%;
+            ul{
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                li{
+                    padding: 0 15px;
+                    a{
+                        @include fontF($roboto, 16px, 700, $color-black);
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                .hide-footer{
+                    display: none;
+                }
+            }
+        }
+        .contact{
+            width: 15%;
+            a{
+                @include fontF($roboto, 22px, 700, $color-black);
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 1600px){
+    .footer-block{
+        .footer-panel{
+            .contact{
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .footer-block{
+        .footer-panel{
+            .logo{
+                .logo-icon{
+                    img{
+                        width: 120px;
+                    }
+                    .policy{
+                        font-size: 14px;
+                    }
+                }
+                .dc56{
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .info{
+                font-size: 14px;
+            }
+            .contact{
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1270px){
+    .footer-block{
+        .footer-panel{
+            .logo{
+                width: 25%;
+                .logo-icon{
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: start;
+                    -webkit-align-items: flex-start;
+                        -ms-flex-align: start;
+                            align-items: flex-start;
+                    .policy{
+                        margin-top: 5px;
+                        margin-left: 0;
+                    }
+                }
+                .dc56{
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: start;
+                    -webkit-align-items: flex-start;
+                        -ms-flex-align: start;
+                            align-items: flex-start;
+                }
+            }
+            .info{
+                width: 27%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .footer-block{
+        .footer-panel{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            .item{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .menu{
+                ul{
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    li{
+                        padding: 0;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .footer-block{
+        .footer-panel{
+            .logo{
+                .dc56{
+                    a{
+                        span{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

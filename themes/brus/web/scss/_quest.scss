@@ -1,0 +1,126 @@
+.quest{
+    position: relative;
+    bottom: -1px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(64%, transparent), color-stop(50%, #342525));
+    background: -o-linear-gradient(top, transparent 64%, #342525 50%);
+    background: linear-gradient(to bottom, transparent 64%, #342525 50%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(64%, transparent), color-stop(50%, #342525));
+    .quest-block{
+        position: relative;
+        padding: 35px 80px 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 350px;
+        background: url(../images/contact-bg.png) no-repeat center;
+        background-size: contain;
+        &:before{
+            content: url(../images/8.png);
+            position: absolute;
+            left: -80px;
+            top: -12px;
+            z-index: -1;
+        }
+        &:after{
+            content: url(../images/9.png);
+            position: absolute;
+            right: -35px;
+            top: 55px;
+        }
+        .quest-title{
+            width: 50%;
+            @include fontF($roboto, 36px, 700, #424242);
+        }
+        .btn-default{
+            padding: 15px 18px;
+        }
+    }
+}
+
+@media (max-width: 1600px){
+    .quest{
+        .quest-block{
+            padding: 35px 35px 0;
+            .quest-title{
+                font-size: 34px;
+            }
+            .btn-dafault{
+                padding: 15px 80px 15px 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .quest{
+        .quest-block{
+            .quest-title{
+                font-size: 28px;
+            }
+            .btn-dafault{
+                padding: 15px 65px 15px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1270px){
+    .quest{
+        .quest-block{
+            height: 235px;
+            &:before, &:after{
+                content: none;
+            }
+            .quest-title{
+                font-size: 24px;
+            }
+            .btn-dafault{
+                font-size: 14px;
+            }
+            .but{
+                span{
+                    width: 45px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .quest{
+        .quest-block{
+            height: auto;
+            padding: 35px;
+            background: url(../images/contact-mobile-bg.png) no-repeat;
+            .quest-title{
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .quest{
+        .quest-block{
+            padding: 25px 20px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            .quest-title{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
